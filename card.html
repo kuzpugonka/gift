@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyGift</title>
-    
-    <link href="./css/normalize.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/svg+xml" href="./img/favicon.svg" />
   </head>
   <body class="body body_congratulation">
@@ -30,30 +30,29 @@
           <p class="congratulation__description">
             Нажмите на нее, чтобы узнать от кого она и прочитать поздравление
           </p>
-          <div class="congratulation__card-wrapper">
-            <div class="congratulation__card-front">
-              <img
-                class="congratulation__card-img"
-                src="./img/Card.png"
-                alt="Открытка"
-              />
-            </div>
-            <div class="congratulation__card-back">
-              <h2>Поздравление</h2>
+          <div class="congratulation__card card">
+            <div class="card__inner">
+              <div class="card__front">
+                <img class="card__img" src="./img/Card.png" alt="Открытка" />
+              </div>
+              <div class="card__back">
+                <h2 class="card__title">Поздравление</h2>
 
-              <p>
-                <span> от кого </span>
-                Иван Иванов
-              </p>
+                <p class="card__detail">
+                  <span class="card__subtitle"> от кого </span>
+                  <span class="card__from"> Иван Иванов </span>
+                </p>
 
-              <p>
-                <span> кому </span>
-                Татьяна Айкина
-              </p>
+                <p class="card__detail">
+                  <span class="card__subtitle"> кому </span>
+                  <span class="card__to"> Татьяна Айкина </span>
+                </p>
 
-              <p>
-                Желаю Счастливого Нового года и Рождества! Будьте здоровы и радостны!
-              </p>
+                <p class="card__message">
+                  Желаю Счастливого Нового года и Рождества! Будьте здоровы и
+                  радостны!
+                </p>
+              </div>
             </div>
           </div>
         </div>
