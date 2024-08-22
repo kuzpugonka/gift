@@ -10,6 +10,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js" defer></script>
     <script src="./js/script.js" defer></script>
     <link href="./css/normalize.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
@@ -46,6 +48,7 @@
                     <img
                       class="gift__card-img"
                       src="./img/card_02_x2.png"
+                      data-card="card_02"
                       alt="Открытка 1"
                     />
                   </div>
@@ -53,6 +56,7 @@
                     <img
                       class="gift__card-img"
                       src="./img/card_03_x2.png"
+                      data-card="card_03"
                       alt="Открытка 1"
                     />
                   </div>
@@ -60,6 +64,7 @@
                     <img
                       class="gift__card-img"
                       src="./img/card_04_x2.png"
+                      data-card="card_04"
                       alt="Открытка 1"
                     />
                   </div>
@@ -67,6 +72,7 @@
                     <img
                       class="gift__card-img"
                       src="./img/card_05_x2.png"
+                      data-card="card_05"
                       alt="Открытка 1"
                     />
                   </div>
@@ -107,14 +113,14 @@
               </div>
             </div>
 
-            <form class="gift__form">
+            <form class="gift__form form">
               <label class="form__label">
                 <span class="form__label-text">от кого</span>
                 <input class="form__field" type="text" name="sender_name" />
               </label>
               <label class="form__label">
                 <span class="form__label-text">телефон отправителя</span>
-                <input class="form__field" type="tel" name="sender_phone" />
+                <input class="form__field form__field_phone" type="text" name="sender_phone" />
               </label>
               <label class="form__label">
                 <span class="form__label-text">кому</span>
@@ -122,7 +128,7 @@
               </label>
               <label class="form__label">
                 <span class="form__label-text">телефон получателя</span>
-                <input class="form__field" type="text" name="receiver_phone" />
+                <input class="form__field form__field_phone" type="text" name="receiver_phone" />
               </label>
               <label class="form__label form__label_textarea">
                 <span class="form__label-text">поздравительный текст</span>
@@ -132,6 +138,8 @@
                   placeholder="Напишите теплые слова"
                 ></textarea>
               </label>
+
+              <input class="form__card" type="hidden" name="card">
 
               <button class="form__button" type="submit" disabled>
                 Отправить
